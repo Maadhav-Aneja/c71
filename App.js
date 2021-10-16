@@ -6,12 +6,13 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 import TransactionScreen from './screens/BookTransactionScreen';
 import SearchScreen from './screens/SearchScreen';
 
+
 export default class App extends React.Component {
   render(){
     return (
-      
+
         <AppContainer />
-      
+
     );
   }
 }
@@ -32,7 +33,7 @@ const TabNavigator = createBottomTabNavigator({
           style={{width:40, height:40}}
         />
         )
-        
+
       }
       else if(routeName === "Search"){
         return(
@@ -40,7 +41,7 @@ const TabNavigator = createBottomTabNavigator({
           source={require("./assets/searchingbook.png")}
           style={{width:40, height:40}}
         />)
-        
+
       }
     }
   })
